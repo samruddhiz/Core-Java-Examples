@@ -27,7 +27,7 @@ public class Cooperative_Bank extends Bank implements Insurance {
 
 
 	@Override
-	public long amountInsured() {		
+	public long payInsuranceAmount() {		
 		return amountInsured;
 	}
 }
