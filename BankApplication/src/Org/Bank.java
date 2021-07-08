@@ -28,7 +28,7 @@ public abstract class Bank {
 	
 	public void openAccount()
 	{
-		System.out.println("Your account has been opened with " + this.bankName + " address: " + this.bankAddress + " Rate of interst: " + this.interestRates(2) + " amount insured: ");
+		System.out.println("Your account has been opened with " + this.bankName + " address: " + this.bankAddress + " Rate of interest: " + this.interestRates(2) );
 	}
 	
 	public abstract double interestRates(int no_of_years);
