@@ -25,7 +25,7 @@ public class Nationalised_Bank extends Bank implements Insurance{
 	}
 
 	@Override
-	public long amountInsured() {
+	public long payInsuranceAmount() {
 		// TODO Auto-generated method stub
 		long extraInsurance = 50000;
 		
