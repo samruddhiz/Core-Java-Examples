@@ -1,0 +1,76 @@
+We will create a bank account.
+
+IndianBank is an interface. 
+Branch1
+
+
+Bank - abstract class, abstraction, encapsulation
+
+Nationalised, Cooperative - inheritance, method overriding (polymorphism)
+
+constructors
+
+
+
+		Bank(name,address)	openAccount(), interestRates()
+		[parametirisedConstructor]
+
+Nationalised 		and		Cooperative
+
+
+Insurance	(amountInsured),	 payInsuranceAmount()		->	interface
+
+
+
+
+
+------------------------------------------------------------------------------------------------------
+Sample Case study for basic concepts of OOPs
+------------------------------------------------------------------------------------------------------
+
+Write a program for creating a Banking Application.
+Bank should have 2 attributes - Bank Name and Bank Address. 
+It has two functionalites(Behaviours): 1)Account Opening and 2)offering various interest Rates to the customers.
+
+
+A bank can be of two types:- Nationalised Bank or Co-operative Bank. 
+Interest Rates offered by both type of banks are different. 
+For Example: Nationalised Banks offer
+1 year deposits - 1.0%;
+2 year deposits - 2.5%;
+3 year deposits - 4.5%;
+
+Co-operative Banks offer
+1 year deposits - 1.5%;
+2 year deposits - 3.5%;
+3 year deposits - 5.5%;
+
+
+Moving further, Each type of bank must have an insurance and a minimum amount insured has to be Rs. 1,00,000. Nationalised Banks provide an extra insurance of Rs.50000 over and above the minimum amount.
+
+
+Note:-
+*	We can only create an object of either "Nationalised Bank" or "Co-operative Bank". Direct Branch of a "Bank" cannot be created.
+*	Branch of a banck cannot be created without specifying its name and address.
+
+----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
+Some of the observations from the case study: 
+----------------------------------------------------------------------------------------------------------------------------
+
+A Base class - Bank (attributes: name,address) (openAccount(), intersteRates())			<-- has to be an abstract class for two reasons 1) direct object should not be created, 2) contains 1 abstract method named insuranceRates() in it.
+
+Two Sub classes - 1) NationaisedBank: overrides method intersteRates() and defines its own interest rates
+	 2) CooperativeBank: overrides method intersteRates() and defines its own interest rates
+*Constructors for both sub classes created so that name and address are initialised at the time of branch(object) creation.
+
+
+An Interface - Insurance 
+- attribute: amountInsured, 
+- function: payInsuranceAmount()
+
+
+
+
+
+
