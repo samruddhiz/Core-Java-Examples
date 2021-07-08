@@ -13,6 +13,6 @@ public class User {
 		
 		Cooperative_Bank branch2 = new Cooperative_Bank("MyCBank", "Mumbai");
 		branch2.openAccount();
-		System.out.println("amount insured for Nationalised bank:" + 	branch2.payInsuranceAmount());
+		System.out.println("amount insured for Co-operative bank:" + 	branch2.payInsuranceAmount());
 	}
 }
